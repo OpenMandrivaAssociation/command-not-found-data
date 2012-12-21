@@ -1,5 +1,5 @@
 
-Name:           command-not-found
+Name:           command-not-found-data
 Version:        2012.12.21
 Release:        1
 Summary:        Data files for command-not-found
