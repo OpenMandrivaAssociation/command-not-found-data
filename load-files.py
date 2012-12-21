@@ -51,7 +51,8 @@ for url in urls:
             bin_name = os.path.basename(bin_name)
             if bin_name not in binaries:
                 binaries[bin_name] = []
-            binaries[bin_name].append((repo, pkg_name))
+            if (repo, pkg_name) not in binaries[bin_name]:
+                binaries[bin_name].append((repo, pkg_name))
     
     os.remove('/tmp/files.xml.lzma')
 
