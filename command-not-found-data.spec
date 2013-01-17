@@ -1,6 +1,6 @@
 
 Name:           command-not-found-data
-Version:        2012.12.21
+Version:        2013.01.17
 Release:        2
 Summary:        Data files for command-not-found
 Group:          File tools
@@ -23,3 +23,4 @@ cp data.json %{buildroot}/usr/share/command-not-found/data.json
 %files
 %dir /usr/share/command-not-found/
 /usr/share/command-not-found/data.json
+
