@@ -1,6 +1,6 @@
 
 Name:           command-not-found-data
-Version:        2013.01.18
+Version:        2013.02.21
 Release:        2
 Summary:        Data files for command-not-found
 Group:          File tools
