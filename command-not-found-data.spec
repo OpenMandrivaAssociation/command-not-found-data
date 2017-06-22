@@ -1,13 +1,12 @@
-
-Name:           command-not-found-data
-Version:        2013.02.21
-Release:        8
-Summary:        Data files for command-not-found
-Group:          File tools
-License:        GPLv2
-URL:            N/A
-Source0:        %{name}-%{version}.tar.gz
-BuildArch:      noarch
+Name:		command-not-found-data
+Version:	2017
+Release:	1
+Summary:	Data files for command-not-found
+Group:		File tools
+License:	GPLv2
+URL:		https://github.com/OpenMandrivaAssociation/command-not-found-data
+Source0:	%{name}-%{version}.tar.xz
+BuildArch:	noarch
 
 %description
 Contains data files for command-not-found tool.
@@ -23,4 +22,3 @@ cp data.json %{buildroot}/usr/share/command-not-found/data.json
 %files
 %dir /usr/share/command-not-found/
 /usr/share/command-not-found/data.json
-
