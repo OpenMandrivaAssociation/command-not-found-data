@@ -1,6 +1,6 @@
 Name:		command-not-found-data
 Version:	2017
-Release:	1
+Release:	2
 Summary:	Data files for command-not-found
 Group:		File tools
 License:	GPLv2
