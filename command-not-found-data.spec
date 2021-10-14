@@ -1,6 +1,6 @@
 Name:		command-not-found-data
 Version:	2017
-Release:	2
+Release:	3
 Summary:	Data files for command-not-found
 Group:		File tools
 License:	GPLv2
@@ -13,12 +13,12 @@ Contains data files for command-not-found tool.
 This package will be rebuilt every week with new data.
 
 %prep
-%setup -q -n %{name}
+%autosetup -n %{name} -p1
 
 %install
-mkdir -p %{buildroot}/usr/share/command-not-found
-cp data.json %{buildroot}/usr/share/command-not-found/data.json
+mkdir -p %{buildroot}%{_datadir}/command-not-found
+cp data.json %{buildroot}%{_datadir}/command-not-found/data.json
 
 %files
-%dir /usr/share/command-not-found/
-/usr/share/command-not-found/data.json
+%dir %{_datadir}/command-not-found
+%{_datadir}/command-not-found/data.json
